@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+spring:
+  application:
+    name: Pokemon Trade Card Game
+props:
+  URL_BASE: https://api.pokemontcg.io/v2
+logging:
+  level:
+    com:
+      fasterxml:
+        jackson: debug
+    org:
+      springframework:
+        web:
+          client:
+            RestTemplate: debug
